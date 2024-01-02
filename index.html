@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload and Display Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-upload">
+            <p class="image-text"><b>Only upload Desktop Image .</b> <span>Image Size 1920x1080</span></p>
+          <input type="file" id="imageInput1" class="input-file">
+          <button onclick="uploadImage(1)" class="upload-btn">Upload Desktop Image</button>
+          <div id="imageDisplay1" class="image-preview"></div>
+          <button onclick="removeImage(1)" id="removeBtn1" class="remove-btn" style="display: none;">Remove</button>
+        </div>
+    
+        <div class="image-upload">
+            <p class="image-text"><b>Only upload Mobile Image .</b> <span>Image Size 480x1100</span></p>
+          <input type="file" id="imageInput2" class="input-file">
+          <button onclick="uploadImage(2)" class="upload-btn">Upload Mobile Image</button>
+          <div id="imageDisplay2" class="image-preview"></div>
+          <button onclick="removeImage(2)" id="removeBtn2" class="remove-btn" style="display: none;">Remove</button>
+        </div>
+      </div>
+      <center><a href="result.html" id="nextPageLink" class="next-page" style="display: none;">Check The responsive Image</a></center>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
