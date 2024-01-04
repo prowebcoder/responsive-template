@@ -24,6 +24,9 @@ body {
 .result-img {
     height: 292px;
 }
+a#nextPageLink {
+    display: none;
+}
 img#resultImage1 {
     max-height: 247px;
     max-width: 100%;
